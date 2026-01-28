@@ -7,77 +7,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; color: #333; }
+        body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; color: #333; scroll-behavior: smooth; }
         .hero-title { font-family: 'Syne', sans-serif; font-size: clamp(3rem, 12vw, 10rem); }
-        .section-number { font-family: 'Syne', sans-serif; opacity: 0.1; font-size: 4rem; }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     </style>
 </head>
 <body>
 
-    <nav class="flex justify-between items-center px-8 py-6 sticky top-0 bg-[#FDFBF7]/90 backdrop-blur-sm z-50">
+    <nav class="flex justify-between items-center px-8 py-6 sticky top-0 bg-[#FDFBF7]/90 backdrop-blur-md z-50">
         <div class="text-xl font-bold tracking-tighter text-gray-900">ND.25</div>
         <div class="space-x-8 hidden md:block text-xs font-semibold uppercase tracking-widest text-gray-500">
+            <a href="#work" class="hover:text-black transition">Work</a>
             <a href="#about" class="hover:text-black transition">About</a>
-            <a href="#experience" class="hover:text-black transition">Path</a>
-            <a href="#projects" class="hover:text-black transition">Works</a>
+            <a href="mailto:nandanadayan7@gmail.com" class="hover:text-black transition">Contact</a>
         </div>
-        <a href="mailto:nandanadayan7@gmail.com" class="text-sm font-medium border-b-2 border-black pb-1 hover:text-gray-500 hover:border-gray-500 transition">Get in touch</a>
+        <a href="https://www.instagram.com/nandanaadayan" target="_blank" class="bg-black text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-gray-800 transition uppercase">Instagram</a>
     </nav>
 
     <section class="relative flex flex-col items-center pt-12 px-6">
         <h1 class="hero-title text-[#EAE6DF] leading-none select-none text-center">NANDANA D</h1>
         
-        <div class="relative -mt-12 md:-mt-24 w-64 h-80 rounded-2xl overflow-hidden shadow-xl z-10 border-8 border-white">
-            <img src="https://via.placeholder.com/600x800" alt="Nandana D Portrait" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500">
+        <div class="relative -mt-12 md:-mt-24 w-72 h-96 rounded-2xl overflow-hidden shadow-2xl z-10 border-[12px] border-white bg-gray-200">
+            <img src="https://image2url.com/r2/default/images/1769610345231-8d5cdeda-43d8-4c94-9a5d-1380127991e3.jpeg" alt="Nandana D" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
         </div>
 
-        <div class="mt-10 text-center max-w-xl z-20">
-            <h2 class="text-2xl font-semibold tracking-tight">2nd Year ECE Student</h2>
-            <p class="text-gray-500 mt-2 font-medium">Electronics & Communication Engineering</p>
-            <p class="mt-6 text-gray-600 leading-relaxed italic">
-                "Bridging the gap between complex hardware and intuitive software through disciplined engineering and creative problem-solving."
-            </p>
-        </div>
-    </section>
-
-    <section id="experience" class="max-w-6xl mx-auto py-24 px-8">
-        <div class="grid md:grid-cols-2 gap-16">
+        <div class="mt-12 text-center max-w-xl z-20">
+            <h2 class="text-2xl font-bold tracking-tight">Electronics & Communication Engineer</h2>
+            <p class="text-gray-500 mt-2 font-medium">Specializing in Digital Systems & Innovation</p>
             
-            <div>
-                <h3 class="text-sm uppercase tracking-widest text-gray-400 mb-8 border-b pb-2">Education</h3>
-                <div class="space-y-8">
-                    <div>
-                        <span class="text-xs font-bold text-blue-600">2023 — 2027</span>
-                        <h4 class="text-xl font-bold mt-1">B.Tech in ECE</h4>
-                        <p class="text-gray-600">Your University Name</p>
-                        <p class="text-sm text-gray-400 mt-1 italic">Focusing on Embedded Systems & Signal Processing</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-sm uppercase tracking-widest text-gray-400 mb-8 border-b pb-2">Academic Interests</h3>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm">Circuit Theory</span>
-                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm">IoT</span>
-                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm">VLSI</span>
-                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm">Python</span>
-                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm">Embedded C</span>
-                </div>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#work" class="bg-black text-white px-8 py-3 rounded-lg text-sm font-bold shadow-lg hover:bg-gray-800 transition">View Projects</a>
+                
+                <a href="assets/my-cv.pdf" download="Nandana_D_CV" class="bg-white border border-gray-200 px-8 py-3 rounded-lg text-sm font-bold hover:bg-gray-50 transition flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download CV
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-16 px-8 border-t border-gray-100">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div>
-                <p class="text-gray-400 text-sm">Let's connect</p>
-                <a href="mailto:nandanadayan7@gmail.com" class="text-2xl font-bold hover:text-blue-600 transition">nandanadayan7@gmail.com</a>
+    <section id="work" class="max-w-6xl mx-auto py-24 px-8">
+        <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-12 font-bold">Featured Works</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="project-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <span class="text-5xl font-extrabold text-[#EAE6DF] family-syne">01</span>
+                <h4 class="text-xl font-bold mt-4">Smart Communication System</h4>
+                <p class="text-gray-500 mt-2 mb-6">A deep dive into signal processing and real-time data transmission.</p>
+                <a href="#" class="text-sm font-bold border-b border-black pb-1 hover:text-gray-400 hover:border-gray-400">View Project Details →</a>
             </div>
-            <div class="flex gap-6">
-                <a href="#" class="text-sm font-semibold hover:underline underline-offset-4">LinkedIn</a>
-                <a href="#" class="text-sm font-semibold hover:underline underline-offset-4">GitHub</a>
+            <div class="project-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <span class="text-5xl font-extrabold text-[#EAE6DF] family-syne">02</span>
+                <h4 class="text-xl font-bold mt-4">Embedded IoT Node</h4>
+                <p class="text-gray-500 mt-2 mb-6">Developing low-power sensor networks for industrial automation.</p>
+                <a href="#" class="text-sm font-bold border-b border-black pb-1 hover:text-gray-400 hover:border-gray-400">View Project Details →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-20 px-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-10 md:mb-0">
+                <h2 class="text-4xl font-bold mb-4">Let's work together.</h2>
+                <a href="mailto:nandanadayan7@gmail.com" class="text-gray-400 text-xl hover:text-white transition">nandanadayan7@gmail.com</a>
+            </div>
+            <div class="flex gap-8 items-center">
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Follow Me</p>
+                <a href="https://www.instagram.com/nandanaadayan" target="_blank" class="text-sm font-bold hover:text-pink-400 transition tracking-widest uppercase">Instagram</a>
             </div>
         </div>
     </footer>
